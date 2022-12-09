@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin rights</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>username</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Gender</th>
+        <th>Phone</th>
+      </tr>
+      <% for(var i=0; i<result.length; i++ ) {%>
+          <tr>
+              <td><%= result[i].username%></td>
+              <td><%= result[i].fname%></td>
+              <td><%= result[i].password%></td>
+              <td><%= result[i].gender%></td>
+              <td><%= result[i].phone%></td>
+
+          </tr>
+      <%}%>
+    </table>
+  </body>
+</html>
